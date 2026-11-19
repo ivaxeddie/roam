@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS groups (
+  name TEXT PRIMARY KEY,
+  salt TEXT NOT NULL,
+  proof TEXT NOT NULL,
+  blob TEXT NOT NULL,
+  revision INTEGER NOT NULL DEFAULT 1
+);

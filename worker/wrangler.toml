@@ -1,0 +1,14 @@
+name = "roam-group-api"
+main = "index.js"
+compatibility_date = "2026-11-01"
+
+# After running: npx wrangler d1 create roam-groups
+# replace YOUR_DATABASE_ID below with the database_id shown.
+[[d1_databases]]
+binding = "DB"
+database_name = "roam-groups"
+database_id = "YOUR_DATABASE_ID"
+
+# Set to the EXACT origin of your published site, e.g. https://YOURNAME.github.io
+[vars]
+ALLOWED_ORIGIN = "https://YOURNAME.github.io"
